@@ -35,7 +35,7 @@ sudo update-alternatives --install /usr/bin/editor editor /snap/nvim/current/usr
 
 # install rust
 if [ -d "$HOME/.rustup" ] && [ -d "$HOME/.cargo" ]; then
-	echo "rust config folders already exist, skipping."
+	echo "rust config folders already exist, skipping..."
 else
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- \
 		-y --no-modify-path
