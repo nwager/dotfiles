@@ -24,7 +24,7 @@ sudo snap install raindrop
 sudo snap install nvim --classic
 
 # install uv
-if command -v uv &>/dev/null; then
+if command -v uv >/dev/null; then
 	echo "uv already installed, skipping..."
 else
 	curl -LsSf https://astral.sh/uv/install.sh | sh
