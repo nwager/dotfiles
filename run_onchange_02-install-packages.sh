@@ -17,6 +17,7 @@ sudo apt-get install -y \
 	python3-venv \
 	1password \
 	xclip \
+	luarocks \
 
 # install snaps
 sudo snap install firefox
@@ -41,3 +42,4 @@ else
 		-y --no-modify-path
 fi
 
+cargo install tree-sitter-cli
