@@ -1,4 +1,4 @@
--- Setup code for LSP support
+-- Setup code for global and language-specific LSP support
 
 -- Reserve a space in the gutter
 -- This will avoid an annoying layout shift in the screen
@@ -60,4 +60,3 @@ cmp.setup({
     end,
   },
 })
-

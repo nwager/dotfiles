@@ -19,6 +19,7 @@ return {
       ensure_installed = {
         "basedpyright",
         "clangd",
+        "lua_ls",
       },
     },
     dependencies = {
