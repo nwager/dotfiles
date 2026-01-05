@@ -1,6 +1,7 @@
 #!/bin/bash
 
 FONTDIR="$HOME/.local/share/fonts"
+mkdir -p $FONTDIR
 cd $FONTDIR
 
 # List of (FontName URL) pairs of fonts to install
