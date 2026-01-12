@@ -53,6 +53,19 @@ cmp.setup({
     -- Scroll up and down in the completion documentation
     ['<C-u>'] = cmp.mapping.scroll_docs(-4),
     ['<C-d>'] = cmp.mapping.scroll_docs(4),
+
+    -- Close menu on arrow nav because arrows are for text nav, use C-n/p
+    -- for menu nav
+    ['<Down>'] = cmp.mapping(function(fallback)
+      cmp.close()
+      fallback()
+      end, { "i" }
+    ),
+    ['<Up>'] = cmp.mapping(function(fallback)
+      cmp.close()
+      fallback()
+      end, { "i" }
+    ),
   }),
   snippet = {
     expand = function(args)
