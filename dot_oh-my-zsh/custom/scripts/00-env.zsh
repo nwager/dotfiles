@@ -14,3 +14,4 @@ source $HOME/.cargo/env
 pathprepend "$HOME/.local/bin"
 
 export XDG_CONFIG_HOME=$HOME/.config
+export CHEZMOI=$HOME/.local/share/chezmoi
