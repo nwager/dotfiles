@@ -3,7 +3,8 @@
 # Set up tmux and tmux plugin manager (tpm).
 #
 
-TMUX_CONFIG="$XDG_CONFIG_HOME/tmux"
+# XDG_CONFIG_HOME may not be set yet
+TMUX_CONFIG="$HOME/.config/tmux"
 
 sudo apt-get install -y tmux git
 mkdir -p $TMUX_CONFIG/plugins

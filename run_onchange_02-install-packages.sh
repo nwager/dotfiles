@@ -18,10 +18,12 @@ sudo apt-get install -y \
 	1password \
 	xclip \
 	luarocks \
+	build-essential \
+	clang \
 
 # install snaps
 sudo snap install firefox
-sudo snap install raindrop
+#sudo snap install raindrop
 sudo snap install nvim --classic
 
 # install uv
@@ -42,4 +44,5 @@ else
 		-y --no-modify-path
 fi
 
-cargo install tree-sitter-cli
+# cargo may not be in the path yet
+$HOME/.cargo/bin/cargo install tree-sitter-cli
